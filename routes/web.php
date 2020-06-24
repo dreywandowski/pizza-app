@@ -22,7 +22,7 @@ Route::get('/mine', function () {
 $pizza = [
 	'type' =>'naija', 
 'location' => 'agege', 
-'price' => 500
+'price' => 5
 ];
     return view('mine', $pizza);
 });
