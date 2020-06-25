@@ -1,7 +1,9 @@
-@extends('layouts.layouts');
+@extends('layouts.layouts')
 
 
 	@section('content')
+
+
 <center><span><p> Welcome to the Pizza Odering App!!</span><br>
 <div class="sharethis-inline-share-buttons"></div>
 

@@ -18,11 +18,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/mine', function () {
-$pizza = [
-	'type' =>'naija', 
-'location' => 'agege', 
-'price' => 5
-];
-    return view('mine', $pizza);
-});
+// Routes are responsible for rendering the pages (views) for the end-user, by using Controllers
+Route::get('/mine', 'Pizza@index');
+
+
+// Wildcard parameter
+Route::get('/mine/{id}', 'Pizza@show');
+
