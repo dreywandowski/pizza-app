@@ -3,19 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pizza;   // this allows us to factor in our Pizza model to allow us query the db 
 
-class Pizza extends Controller
+class Pizzas extends Controller
 {
 	// function to handle the view
 
     public function index(){
-    	$pizza = [
+    	/**$pizza = [
 	'type' =>'naija', 
 'location' => 'agege', 
 'price' => 5
-];
+];**/
 
-    return view('mine', $pizza);
+// retrive all the records in the db
+$pizza = Pizza::all();
+
+    return view('mine', [
+    	'pizza' =>$pizza, 
+    ]);
 }
 
 

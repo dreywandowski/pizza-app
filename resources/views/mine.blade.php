@@ -10,15 +10,14 @@
 <center><span><p> Welcome to the Pizza Odering App!!</span><br>
 <div class="sharethis-inline-share-buttons"></div>
 
-<p>This is Pizza from {{$type}}. It costs {{$price}} and its been sold at {{$location}}</p></center>
 
-<!--Blade syntax-->
-@if($price < 15)
-	<p>The price is very cheap</p>
-@else
-	<p> E too cost ma niggy
+<!-- Access the details from the model-->
 
-@endif
+<p>@foreach($pizza as $pizza) <br>
+
+<b> Pizza name: {{ $pizza->name}} </b>... Type: <i> {{ $pizza->type }}<br></i></p></center>
+@endforeach
+
 
 @endsection
 

@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 
 // Routes are responsible for rendering the pages (views) for the end-user, by using Controllers
-Route::get('/mine', 'Pizza@index');
+Route::get('/mine', 'Pizzas@index');
 
 
 /** Wildcard parameter
@@ -28,5 +28,5 @@ is the id we are querying.
 We do this by creating sepearte route paths and a seperate view
 **/
 
-Route::get('/mine/{id}', 'Pizza@show');
+Route::get('/mine/{id}', 'Pizzas@show');
 
