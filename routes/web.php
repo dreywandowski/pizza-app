@@ -22,6 +22,11 @@ Route::get('/', function () {
 Route::get('/mine', 'Pizza@index');
 
 
-// Wildcard parameter
+/** Wildcard parameter
+We can use Wilcards to query information from the database in Laravel, e.g. adura.xyz/users/{{id}}, where {{id}}
+is the id we are querying.
+We do this by creating sepearte route paths and a seperate view
+**/
+
 Route::get('/mine/{id}', 'Pizza@show');
 

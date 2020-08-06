@@ -1,6 +1,9 @@
+<!-- this ensures and helps us display and render consistent pages across our poject-->
+
 @extends('layouts.layouts')
 
 
+<!-- this allows us break up our views in to chunks for us to reference to in the layout file-->
 	@section('content')
 
 

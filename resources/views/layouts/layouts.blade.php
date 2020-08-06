@@ -12,7 +12,8 @@
     </head>
 
     <body>
-<!--testing different yields-->
+
+<!--testing different yields for section contents defined in the main view-->
         @yield('content')
 
         <br><br>
