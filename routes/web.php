@@ -18,8 +18,12 @@ Route::get('/', function () {
 });
 
 
-// Routes are responsible for rendering the pages (views) for the end-user, by using Controllers
-Route::get('/mine', 'Pizzas@index');
+// Routes are responsible for rendering the pages (views) for the end-user, by using Controllers. By default this will go to the index.php file in the Pizzas folder under views
+Route::get('/pizzas', 'PizzaController@index');
+
+
+// route to create a new resource
+Route::get('/pizzas/create', 'PizzaController@create');
 
 
 /** Wildcard parameter
@@ -27,6 +31,8 @@ We can use Wilcards to query information from the database in Laravel, e.g. adur
 is the id we are querying.
 We do this by creating sepearte route paths and a seperate view
 **/
+Route::get('/pizzas/{id}', 'PizzaController@show');
 
-Route::get('/mine/{id}', 'Pizzas@show');
+
+
 

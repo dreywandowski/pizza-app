@@ -3,7 +3,7 @@
 
 	@section('content')
 
-This is to check how to create and check wildcards --  {{$id}}
+This is to create new Pizza
 
 
 
