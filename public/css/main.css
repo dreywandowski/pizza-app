@@ -1,11 +1,15 @@
 
             html, body {
-            
-            font-size: 22px;
+            background-image: url(../img/12962.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+
+            font-size: 35px;
              font-family: 'Zilla Slab', serif;
         
                 background-color: #fff;
-                color: #636b6f;
+                color: white;
               
                 font-weight: 200;
                 height: 100vh;

@@ -11,4 +11,4 @@ Here is the Pizza you ordered:
 </div>
 
 
-<p><a href="/pizzas"> Back to the list of all pizzas</a></p>
+<p><a href="/pizzas"> Back to the home page</a></p>

@@ -18,12 +18,23 @@ Route::get('/', function () {
 });
 
 
+
+
 // Routes are responsible for rendering the pages (views) for the end-user, by using Controllers. By default this will go to the index.php file in the Pizzas folder under views
 Route::get('/pizzas', 'PizzaController@index');
 
 
+// gets all pizzas available
+Route::get('/pizzas/all', 'PizzaController@all');
+
+
+
 // route to create a new resource
 Route::get('/pizzas/create', 'PizzaController@create');
+
+
+// route to store a new resource
+Route::post('/pizzas/create', 'PizzaController@store');
 
 
 /** Wildcard parameter

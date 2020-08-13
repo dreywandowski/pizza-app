@@ -16,12 +16,14 @@
 <!--testing different yields for section contents defined in the main view-->
         @yield('content')
 
-        <br><br>
-        <p> This is to check how to create different yields</p>
-    <br><br>
+    @yield('form')
+        
+    
+
+<!--<p> This is to check how to create different yields</p>
+    <br><br>-->
 
   
-    @yield('form')
 
 </body>
 </html>
