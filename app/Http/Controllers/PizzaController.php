@@ -48,6 +48,8 @@ $pizza = Pizza::all();
         $pizza->name = request('fname');
         $pizza->type = request('name');
         $pizza->type = request('type');
+        $pizza->price = request('price');
+        $pizza->extras = request('extras');
 
 
 // save the data
@@ -61,13 +63,21 @@ $pizza = Pizza::all();
 
 // function to handle a wildcard query 
     public function show($id){
-        $pizza = Pizza::find($id);
+        $pizza = Pizza::findorFail($id);
 
     	 return view('pizzas.show', [
             'pizza' =>$pizza,
         ]);
         }
-    
+ 
+ // function to delete   
+
+public function destroy($id){
+    $pizza = Pizza::findorFail($id);
+    $pizza->delete();
+
+    return redirect('/pizzas')->with('msg', 'Pizza deleted successfully');
+}
 
 
 }

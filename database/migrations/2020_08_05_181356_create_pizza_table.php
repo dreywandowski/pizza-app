@@ -19,6 +19,9 @@ class CreatePizzaTable extends Migration
             $table->string('name');
             $table->string('type');
             $table->integer('price');
+
+            // storing an array of values is not possible in mysql, but we make use of the json data type
+            $table->json('extras');
         });
     }
 

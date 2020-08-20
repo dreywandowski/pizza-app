@@ -45,5 +45,10 @@ We do this by creating sepearte route paths and a seperate view
 Route::get('/pizzas/{id}', 'PizzaController@show');
 
 
+// route to delete record
+Route::delete('/pizzas/{id}', 'PizzaController@destroy');
+
+
+
 
 
